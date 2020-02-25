@@ -35,11 +35,20 @@ body {
 	font-size: 24px;
 	font-family: 'montserrat-bold';
 	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	transition: .3s;
+}
+.navbar-brand:hover {
+	color: cornflowerblue !important;
 }
 
 .nav-link {
 	color: white !important;
 	margin-left: 70px;
+	transition: .3s;
+}
+.nav-link:hover {
+	text-decoration: none;
+	color: cornflowerblue !important;
 }
 
 .nav-item {
