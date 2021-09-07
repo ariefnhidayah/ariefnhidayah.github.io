@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://backend-ariefnhidayah.000webhostapp.com/inc/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -237,7 +237,7 @@
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
+	            if (msg.indexOf("OK") > -1) {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();

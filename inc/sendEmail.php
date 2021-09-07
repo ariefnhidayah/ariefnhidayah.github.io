@@ -1,5 +1,12 @@
 ﻿<?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require '../vendor/autoload.php';
+
 // Replace this with your own email address
 $siteOwnersEmail = 'ariefnhidayah@gmail.com';
 
@@ -38,20 +45,31 @@ if($_POST) {
    // Set From: header
    $from =  $name . " <" . $email . ">";
 
-   	// Email Headers
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $email . "\r\n";
- 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html;\r\n";
-
-
+   $mail = new PHPMailer(true);
    if (!isset($error)) {
+			try {
+				$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+				$mail->isSMTP();                      
+				$mail->Host       = 'smtp.gmail.com'; 
+				$mail->SMTPAuth   = true;             
+				$mail->Username   = $siteOwnersEmail; 
+				$mail->Password   = '';    
+				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+				$mail->Port       = 465;                
 
-    	ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      	$mail = mail($siteOwnersEmail, $subject, $message);
+				$mail->setFrom($email, $name);
+				$mail->addAddress($siteOwnersEmail, "Arief");
+				$mail->addReplyTo($siteOwnersEmail, 'Information');
+				$mail->isHTML(true);
+				$mail->Subject = $subject;
+				$mail->Body = $message;
+				$mail->send();
 
-		if ($mail) { echo "OK"; }
-      	else { echo "Something went wrong. Please try again."; }
+				echo "OK";
+
+		  	} catch (Exception $error) {
+				echo "Something went wrong. Please try again.";
+		  	}
 		
 	} # end if - no validation error
 
