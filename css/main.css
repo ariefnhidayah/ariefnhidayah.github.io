@@ -1509,6 +1509,7 @@ header .logo a {
 	border-radius: 50%;
 	margin: .9rem 0 0 0;
 	float: left;
+	object-fit: cover;
 }
 .intro-info .lead {
 	text-align: left;
