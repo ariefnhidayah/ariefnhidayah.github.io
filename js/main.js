@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "https://backend-ariefnhidayah.000webhostapp.com/inc/sendEmail.php",
+		      url: "https://aquastoreid.com/inc/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 

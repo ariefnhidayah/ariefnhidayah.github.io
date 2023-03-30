@@ -1,4 +1,5 @@
 ﻿<?php
+header("Access-Control-Allow-Origin: ariefnhidayah.github.io");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -40,7 +41,7 @@ if($_POST) {
    $message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+   $message .= "<br /> ----- <br /> This email was sent from ariefnhidayah.github.io contact form. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
@@ -50,14 +51,14 @@ if($_POST) {
 			try {
 				$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 				$mail->isSMTP();                      
-				$mail->Host       = 'smtp.gmail.com'; 
+				$mail->Host       = 'aquastoreid.com'; 
 				$mail->SMTPAuth   = true;             
-				$mail->Username   = $siteOwnersEmail; 
+				$mail->Username   = 'contact@aquastoreid.com'; 
 				$mail->Password   = '';    
 				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
-				$mail->Port       = 465;                
+				$mail->Port       = 465;
 
-				$mail->setFrom($email, $name);
+				$mail->setFrom('contact@aquastoreid.com', $name);
 				$mail->addAddress($siteOwnersEmail, "Arief");
 				$mail->addReplyTo($siteOwnersEmail, 'Information');
 				$mail->isHTML(true);
@@ -68,7 +69,8 @@ if($_POST) {
 				echo "OK";
 
 		  	} catch (Exception $error) {
-				echo "Something went wrong. Please try again.";
+				echo $error->message;
+				echo "\nSomething went wrong. Please try again.";
 		  	}
 		
 	} # end if - no validation error
