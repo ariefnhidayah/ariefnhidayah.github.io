@@ -1,5 +1,5 @@
 ﻿<?php
-header("Access-Control-Allow-Origin: ariefnhidayah.github.io");
+header("Access-Control-Allow-Origin: https://ariefnhidayah.github.io");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
