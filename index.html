@@ -15,8 +15,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <meta name="robots" content="noindex, nofollow" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div id="loader-wrapper">
+            <span class="loader"></span>
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -36,21 +40,21 @@
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0" data-bs-spy="scroll" data-bs-target="#sideNav">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h1 class="mb-0" data-aos="fade-right">
                         Hi!<br/> I'm
                         <span class="text-primary">Arief Nur Hidayah</span>
                     </h1>
-                    <div class="subheading mb-5">
+                    <div class="subheading mb-5" data-aos="fade-left">
                         Full Stack Developer | Indonesia |
                         <a href="mailto:ariefnhidayah@gmail.com">ariefnhidayah@gmail.com</a>
                     </div>
-                    <p class="lead mb-2">I'm a full stack developer graduated from Mercu Buana University. I'm ready to learn a new technology or stack programming to improve my skill.</p>
-                    <a href="https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/resume/a5252f19d814ef64b43df3a1a3c7d1d3.pdf" target="_blank" class="btn btn-primary mb-5 text-white">Download My CV</a>
-                    <div class="social-icons">
+                    <p class="lead mb-2" data-aos="fade-up">I'm a full stack developer graduated from Mercu Buana University. I'm ready to learn a new technology or stack programming to improve my skill.</p>
+                    <a href="https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/resume/a5252f19d814ef64b43df3a1a3c7d1d3.pdf" target="_blank" class="btn btn-primary mb-5 text-white" data-aos="fade-up">Download My CV</a>
+                    <div class="social-icons" data-aos="fade-up">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/arief-nur-hidayah/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://github.com/ariefnhidayah"><i class="fab fa-github"></i></a>
                     </div>
@@ -60,39 +64,39 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-2">Programming Languages</div>
-                    <div class="mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
-                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" style="height: 40px;" title="Typescript" />
+                    <h2 class="mb-5" data-aos="fade-up">Skills</h2>
+                    <div class="subheading mb-1" data-aos="fade-right">Programming Languages</div>
+                    <div class="mb-3">
+                        <img data-aos="fade-right" data-aos-duration="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                        <img data-aos="fade-right" data-aos-duration="400" src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                        <img data-aos="fade-right" data-aos-duration="600" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                        <img data-aos="fade-right" data-aos-duration="800" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" style="height: 40px;" title="Typescript" />
                     </div>
-                    <div class="subheading mb-2">Frameworks / Libraries</div>
-                    <div class="mb-4">
-                        <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
-                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" style="height: 40px;" title="Laravel" />
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
-                        <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
-                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
-                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
-                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
-                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                    <div class="subheading mb-1" data-aos="fade-right">Frameworks / Libraries</div>
+                    <div class="mb-3">
+                        <img data-aos="fade-right" data-aos-duration="200" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
+                        <img data-aos="fade-right" data-aos-duration="400" src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                        <img data-aos="fade-right" data-aos-duration="600" src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" style="height: 40px;" title="Laravel" />
+                        <img data-aos="fade-right" data-aos-duration="800" src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
+                        <img data-aos="fade-right" data-aos-duration="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                        <img data-aos="fade-right" data-aos-duration="1200" src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                        <img data-aos="fade-right" data-aos-duration="1400" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
+                        <img data-aos="fade-right" data-aos-duration="1600" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                        <img data-aos="fade-right" data-aos-duration="1800" src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                        <img data-aos="fade-right" data-aos-duration="2000" src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
                     </div>
-                    <div class="subheading mb-2">Databases</div>
-                    <div class="mb-4">
-                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
+                    <div class="subheading mb-1" data-aos="fade-right">Databases</div>
+                    <div class="mb-3">
+                        <img data-aos="fade-right" data-aos-duration="200" src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                        <img data-aos="fade-right" data-aos-duration="400" src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
                     </div>
-                    <div class="subheading mb-2">Other Tools</div>
-                    <div class="mb-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
-                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
-                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
-                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
-                        <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
+                    <div class="subheading mb-1" data-aos="fade-right">Other Tools</div>
+                    <div class="mb-3">
+                        <img data-aos="fade-right" data-aos-duration="200" src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                        <img data-aos="fade-right" data-aos-duration="400" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
+                        <img data-aos="fade-right" data-aos-duration="600" src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                        <img data-aos="fade-right" data-aos-duration="800" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                        <img data-aos="fade-right" data-aos-duration="1000" src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
                     </div>
                 </div>
             </section>
@@ -100,45 +104,47 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5" data-aos="fade-up">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Full Stack Developer</h3>
-                            <div class="subheading mb-3">PT. Tokomanamana Nasional Indonesia | Fulltime</div>
-                            <ul>
-                                <li>Working with development team to create new features or change existing features, and fix errors in the application.</li>
-                                <li>Ensure the code runs according to the requirements that have been created.</li>
-                                <li>Deploying code to the production server.</li>
-                                <li>Create API documentation with Postman.</li>
-                                <li>Develop new application / maintenance existing application.</li>
-                                <li>Integrating one application with other related applications.</li>
-                                <li>Create apps from scratch.</li>
-                            </ul>
-                            <div class="mt-4 mb-3">
-                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
-                                <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
-                                <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
-                                <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
-                                <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
-                                <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
-                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
-                                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
-                                <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
-                                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
-                                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
-                                <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
-                                <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
-                                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" title="Git" style="height: 40px;" />
-                                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
-                                <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                            <h3 class="mb-0" data-aos="fade-up" data-aos-duration="1000">Full Stack Developer</h3>
+                            <div class="subheading mb-3" data-aos="fade-up" data-aos-duration="1000">PT. Tokomanamana Nasional Indonesia | Fulltime</div>
+                            <div data-aos="fade-up" data-aos-duration="1500" style="display: inline-block;">
+                                <ul>
+                                    <li>Working with development team to create new features or change existing features, and fix errors in the application.</li>
+                                    <li>Ensure the code runs according to the requirements that have been created.</li>
+                                    <li>Deploying code to the production server.</li>
+                                    <li>Create API documentation with Postman.</li>
+                                    <li>Develop new application / maintenance existing application.</li>
+                                    <li>Integrating one application with other related applications.</li>
+                                    <li>Create apps from scratch.</li>
+                                </ul>
+                                <div class="mt-4 mb-3">
+                                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                    <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                    <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                    <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
+                                    <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                    <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
+                                    <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                    <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                    <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
+                                    <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
+                                    <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" title="Git" style="height: 40px;" />
+                                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
+                                    <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                </div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2019 - Oktober 2023</span></div>
+                        <div class="flex-shrink-0" data-aos="fade-up" data-aos-duration="1000"><span class="text-primary">November 2019 - Oktober 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5" style="display: none !important;">
                         <div class="flex-grow-1">
@@ -168,8 +174,8 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <h2 class="mb-5" data-aos="fade-up">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-up" data-aos-duration="500">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Mercu Buana University</h3>
                             <div class="subheading mb-3">Bachelor's Degree Informatics</div>
@@ -177,7 +183,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2018 - 2023</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">SMK Negeri 1 Tangerang</h3>
                             <div class="subheading mb-3">Department of Computer Network Engineering</div>
@@ -190,8 +196,8 @@
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="mb-0">
+                    <h2 class="mb-5" data-aos="fade-up">Awards & Certifications</h2>
+                    <ul class="mb-0" data-aos="fade-up" data-aos-duration="1000">
                         <li>
                             <a href="https://drive.google.com/file/d/1oieNLKjTUBnnkk94AqMRsbR0LltN6oT4/view" target="_blank">1st Place - University of Mercu Buana - Facuty of Computer Science Competition 2021</a>
                         </li>
@@ -206,9 +212,9 @@
             <hr class="m-0" />
             <section class="resume-section" id="portfolio">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Portfolio</h2>
-                    <div class="subheading mb-3">Web Development</div>
-                    <div class="card mb-4 card-project">
+                    <h2 class="mb-5" data-aos="fade-up">Portfolio</h2>
+                    <div class="subheading mb-3" data-aos="fade-up">Web Development</div>
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/aquastore/aquastore-front.png" data-toggle="lightbox">
@@ -236,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/bwastartup/bwastartup-front.png" data-toggle="lightbox">
@@ -262,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/lpn/legalitas perizinan nasional-front.png" data-toggle="lightbox">
@@ -289,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/milenia/milenia-front.png" data-toggle="lightbox">
@@ -316,7 +322,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/reward-tanaka-dashboard/reward tanaka dashboard-front.png" data-toggle="lightbox">
@@ -339,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/roomi/roomi-front.png" data-toggle="lightbox">
@@ -367,7 +373,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/tanaka-web/tanakaweb-front.png" data-toggle="lightbox">
@@ -394,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/tokomanamana/tokomanamana-front.png" data-toggle="lightbox">
@@ -423,7 +429,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/erp-tanaka/tanaka-erp-front.png" data-toggle="lightbox">
@@ -448,8 +454,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="subheading mb-3 mt-5">Mobile Development</div>
-                    <div class="card mb-4 card-project">
+                    <div class="subheading mb-3 mt-5" data-aos="fade-up">Mobile Development</div>
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/bwaflutix/bwaflutix-portrait.png" data-toggle="lightbox">
@@ -469,7 +475,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/foodmarket-app/foodmarket-portrait.png" data-toggle="lightbox">
@@ -493,7 +499,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/manga-verse/mangaverse-portrait.png" data-toggle="lightbox">
@@ -517,7 +523,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/reward-tanaka/reward-tanaka-portrait.png" data-toggle="lightbox">
@@ -540,7 +546,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4 card-project">
+                    <div class="card mb-4 card-project" data-aos="fade-up">
                         <div class="row g-0">
                             <div class="col-sm-3">
                                 <a href="images/portfolio/so-tanaka/so-tanaka-portrait.png" data-toggle="lightbox">
@@ -571,7 +577,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Lightbox -->
         <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            AOS.init();
+            $(window).on('load', function () {
+                $('#loader-wrapper').fadeOut(500);
+            }) 
+        </script>
     </body>
 </html>
