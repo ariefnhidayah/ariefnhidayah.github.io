@@ -1,59 +1,538 @@
 <!DOCTYPE html>
-<html lang="id">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arief Nur Hidayah</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="shortcut icon"
-        href="https://eu.ui-avatars.com/api/?background=FFFFFF&color=0D8ABC&name=arief&length=1&bold=1"
-        type="image/x-icon" />
-</head>
-
-<body>
-
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#skills">Skills</a>
-                    </li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Portfolio Website" />
+        <meta name="author" content="Arief Nur Hidayah" />
+        <title>Arief Nur Hidayah</title>
+        <link rel="shortcut icon" href="https://eu.ui-avatars.com/api/?background=FFFFFF&color=0D8ABC&name=arief&length=1&bold=1" type="image/x-icon" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <meta name="robots" content="noindex, nofollow" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Arief Nur Hidayah</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile-picture.jpeg" alt="Profile Picture" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                 </ul>
             </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Hi!<br/> I'm
+                        <span class="text-primary">Arief Nur Hidayah</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Software Engineer | Indonesia |
+                        <a href="mailto:ariefnhidayah@gmail.com">ariefnhidayah@gmail.com</a>
+                    </div>
+                    <p class="lead mb-2">I'm a full stack developer graduated from Mercu Buana University. I'm ready to learn a new technology or stack programming to improve my skill.</p>
+                    <a href="https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/resume/a5252f19d814ef64b43df3a1a3c7d1d3.pdf" target="_blank" class="btn btn-primary mb-5 text-white">Download My CV</a>
+                    <div class="social-icons">
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/arief-nur-hidayah/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://github.com/ariefnhidayah"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-2">Programming Languages</div>
+                    <div class="mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" style="height: 40px;" title="Typescript" />
+                    </div>
+                    <div class="subheading mb-2">Frameworks / Libraries</div>
+                    <div class="mb-4">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
+                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" style="height: 40px;" title="Laravel" />
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                        <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
+                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                    </div>
+                    <div class="subheading mb-2">Databases</div>
+                    <div class="mb-4">
+                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
+                    </div>
+                    <div class="subheading mb-2">Other Tools</div>
+                    <div class="mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
+                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                        <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Full Stack Developer</h3>
+                            <div class="subheading mb-3">PT. Tokomanamana Nasional Indonesia | Fulltime</div>
+                            <ul>
+                                <li>Working with development team to create new features or change existing features, and fix errors in the application.</li>
+                                <li>Ensure the code runs according to the requirements that have been created.</li>
+                                <li>Deploying code to the production server.</li>
+                                <li>Create API documentation with Postman.</li>
+                                <li>Develop new application / maintenance existing application.</li>
+                                <li>Integrating one application with other related applications.</li>
+                                <li>Create apps from scratch.</li>
+                            </ul>
+                            <div class="mt-4 mb-3">
+                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-svg-vector.svg" style="height: 40px;" title="Bootstrap" />
+                                <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" style="height: 40px;" title="JQuery" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nuxt-js-icon.png" style="height: 40px;" title="Nuxt JS" />
+                                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png" style="height: 40px;" title="PostgreSQL" />
+                                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" title="Swagger" style="height: 40px;" />
+                                <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" title="Git" style="height: 40px;" />
+                                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" title="Gitlab" style="height: 40px;" />
+                                <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2019 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5" style="display: none !important;">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Backend Developer</h3>
+                            <div class="subheading mb-3">PT. Solutech Inovasi Teknologi | Freelance</div>
+                            <ul>
+                                <li>Develop API with framework Express JS</li>
+                                <li>Ensure the code runs according to the requirements that have been created.</li>
+                                <li>Working with development team to create a new features or update existing features, and fix errors in the application.</li>
+                                <li>Create API documentation with Postman.</li>
+                                <li>Create and develop other features needed.</li>
+                            </ul>
+                            <div>
+                                <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" title="Git" style="height: 40px;" />
+                                <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2021 - December 2021</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Mercu Buana University</h3>
+                            <div class="subheading mb-3">Bachelor's Degree Informatics</div>
+                            <!-- <p>GPA: 3.71</p> -->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2018 - 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">SMK Negeri 1 Tangerang</h3>
+                            <div class="subheading mb-3">Department of Computer Network Engineering</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015 - 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="mb-0">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1oieNLKjTUBnnkk94AqMRsbR0LltN6oT4/view" target="_blank">1st Place - University of Mercu Buana - Facuty of Computer Science Competition 2021</a>
+                        </li>
+                        <li><a href="https://drive.google.com/file/d/1pC564NYSnlnI0xOogs2sgCMhNiOTWpF0/view" target="_blank">Flutter Mobile Developer Certification 2021 - Buildwithangga</a></li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1PRnMQATeR-A-DtLyDAK3wgwuSAfBHHfe/view" target="_blank">Struktur Data Javascript Certification 2021 - Buildwithangga</a>
+                        </li>
+                        <li><a href="https://drive.google.com/file/d/10EOm0AwK2b7ZP_wwilkvuLobLt9GF9jg/view" target="_blank">Full-Stack Golang & Vue JS 2021 - Buildwithangga</a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Portfolio</h2>
+                    <div class="subheading mb-3">Web Development</div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/aquastore/aquastore-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/aquastore/aquastore-front.png" class="card-img" alt="Aquastore" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aquastore</h5>
+                                    <p class="card-text">Aquastore is a marketplace platform for purchasing ornamental fish. This project was created for a college assignment.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                        <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/bwastartup/bwastartup-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/bwastartup/bwastartup-front.png" class="card-img" alt="Start Up Campaign" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Start Up Campaign</h5>
+                                    <p class="card-text">Start Up Campaign is a platform for new start up for search investor with a campaign. This project was created for finished course Full Stack Golang & Vue JS in Buildwithangga.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" title="Go Lang" style="height: 40px;" />
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/lpn/legalitas perizinan nasional-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/lpn/legalitas perizinan nasional-front.png" class="card-img" alt="Legalitas Perizinan Nasional" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Legalitas Perizinan Nasional</h5>
+                                    <p class="card-text">Legalitas Perizinan Nasional is a company profile for construction certificate making services.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/milenia/milenia-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/milenia/milenia-front.png" class="card-img" alt="Milenia" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Milenia</h5>
+                                    <p class="card-text">Milenia is a platform for selling furniture brands with the name Milenia.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/reward-tanaka-dashboard/reward tanaka dashboard-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/reward-tanaka-dashboard/reward tanaka dashboard-front.png" class="card-img" alt="Reward Tanaka Dashboard" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reward Tanaka Dashboard</h5>
+                                    <p class="card-text">Reward Tanaka Dashboard is a web app for managing data for Reward Tanaka APP.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                        <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/roomi/roomi-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/roomi/roomi-front.png" class="card-img" alt="Roomi" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roomi</h5>
+                                    <p class="card-text">Roomi is a web company for selling product electronic like Smart TV, Smart LED and TV LED.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                        <img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 40px;" title="Vuetify" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/tanaka-web/tanakaweb-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/tanaka-web/tanakaweb-front.png" class="card-img" alt="Tanaka" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tanaka</h5>
+                                    <p class="card-text">Tanaka is a company profile for brand with tanaka for introduce electronic products.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/tokomanamana/tokomanamana-front.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/tokomanamana/tokomanamana-front.png" class="card-img" alt="Tokomanamana" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tokomanamana</h5>
+                                    <p class="card-text">Tokomanamana is a platform that sells electronic products and home products such as tables and chairs etc.</p>
+                                    <div>
+                                        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" style="height: 40px;" title="HTML" />
+                                        <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" style="height: 40px;" title="CSS" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://www.svgrepo.com/show/452088/php.svg" style="height: 40px;" title="PHP" />
+                                        <img src="https://www.svgrepo.com/show/303425/codeigniter-logo.svg" style="height: 40px;" title="Codeigniter" />
+                                        <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" style="height: 40px;" title="MySQL" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCBvcuDMmPb_mySksSVQt_zJHBaLe0oA2y7iv0464NVpoz-yvzBj3Som6f4QjLHImP9o&usqp=CAU" style="height: 40px;" title="Vue JS" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subheading mb-3 mt-5">Mobile Development</div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/bwaflutix/bwaflutix-portrait.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/bwaflutix/bwaflutix-portrait.png" class="card-img" alt="Bwaflutix" height="240px" style="object-fit: contain;" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flutix</h5>
+                                    <p class="card-text">Flutix is a android application for booking film ticket. This project was created for course assignment.</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/foodmarket-app/foodmarket-portrait.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/foodmarket-app/foodmarket-portrait.png" class="card-img" alt="Foodmarket" height="240px" style="object-fit: contain;" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Foodmarket</h5>
+                                    <p class="card-text">Foodmarket is a android application for buying foods. This project was created for course assignment in Buildwithangga.</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/manga-verse/mangaverse-portrait.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/manga-verse/mangaverse-portrait.png" class="card-img" alt="Manga Verse" height="240px" style="object-fit: contain;" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Manga Verse</h5>
+                                    <p class="card-text">Manga Verse is a android application for read comics for free.</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" style="height: 40px;" title="Javascript" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" style="height: 40px;" title="Express JS" />
+                                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" title="Github" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/reward-tanaka/reward-tanaka-portrait.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/reward-tanaka/reward-tanaka-portrait.png" class="card-img" alt="Reward Tanaka" height="240px" style="object-fit: contain;" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reward Tanaka</h5>
+                                    <p class="card-text">Reward Tanaka is a android application for tanaka sales to scan QR Code for get reward.</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-9nvpcyc3.png" style="height: 40px;" title="Nest JS" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 card-project">
+                        <div class="row g-0">
+                            <div class="col-sm-3">
+                                <a href="images/portfolio/so-tanaka/so-tanaka-portrait.png" data-toggle="lightbox">
+                                    <img src="images/portfolio/so-tanaka/so-tanaka-portrait.png" class="card-img" alt="SO Tanaka" height="240px" style="object-fit: contain;" />
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">SO Tanaka</h5>
+                                    <p class="card-text">SO Tanaka is a android application for tanaka sales to selling tanaka products to registered store in tanaka.</p>
+                                    <div>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png" style="height: 40px;" title="Dart" />
+                                        <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" title="Flutter" style="height: 40px;" />
+                                        <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" style="height: 40px;" title="Node JS" />
+                                        <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-9nvpcyc3.png" style="height: 40px;" title="Nest JS" />
+                                        <img src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png" title="Bitbucket" style="height: 40px;" />
+                                        <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" title="Postman" style="height: 40px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects -->
         </div>
-    </nav>
-
-    <div class="px-4 py-5 my-5 text-center bg-white">
-        <img class="d-block mx-auto rounded mb-4" style="object-fit: cover;" width="120" height="120" src="images/profile-picture.jpeg" alt="Profil Pic" />
-        <h1 class="display-5 fw-bold">Hi, I'm Arief Nur Hidayah</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Software Engineer</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Contact Me</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-
-    <script>
-
-    </script>
-
-</body>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Lightbox -->
+        <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
