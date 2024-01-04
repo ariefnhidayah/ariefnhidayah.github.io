@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+window.location.href = 'https://ariefnhidayah.com';
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
