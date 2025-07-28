@@ -7,7 +7,7 @@
 // Scripts
 // 
 
-window.location.href = 'https://ariefnhidayah.com';
+// window.location.href = 'https://ariefnhidayah.com';
 
 window.addEventListener('DOMContentLoaded', event => {
 
